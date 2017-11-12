@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.register-panel{
+    padding-top: 56px;
+}
+.card {
+    border: 1px solid;
+    box-shadow: #5146ff 2px ;
+}

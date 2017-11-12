@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Dashboard</title>
+    <% include ./snippets/stylesheet.ejs %>
+</head>
+<body>
+
+<% include ./snippets/navbar.ejs %>
+<div class="container" >
+
+    <div class="col-md-3">
+        <div class="panel panel-default card">
+            <div class="panel-body text-center">
+                <img src="/images/blogee-user.jpg" class="img-rounded" width="100px" height = "100px">
+                <h4>Suresh Kumar D<br><small>@suresh1999</small></h4>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+    <div class="col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h5 class="panel-title"><span class="glyphicon glyphicon-bookmark">  </span>  Recent Posts made by you</h5>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <% for(var i=0;i<post.length;i++) { %>
+                    <li class=""><a href=""><%= post[i].title %>|<%= post[i].createdAt %></a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<% include ./snippets/javascript.ejs %>
+</body>
+
+</html>

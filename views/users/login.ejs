@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Login page</title>
+        <% include ../snippets/stylesheet.ejs %>
+    </head>
+    <body>
+
+    <% include ../snippets/navbar.ejs %>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-offset-4 col-md-4 ">
+                <div class="panel register-panel">
+                    <div class="panel-title text-center"><h3>Login</h3></div>
+                </div>
+                <form role="form" method = "post" action="http://localhost:3000/login">
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i> </span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="username">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1" name="password">
+                        </div><br>
+                        <div class="input-group form-group">
+                            <input type="submit" class="btn btn-success" value="Login"/>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <% include ../snippets/javascript.ejs %>
+    </body>
+
+</html>
